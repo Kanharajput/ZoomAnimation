@@ -4,6 +4,7 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.dynamicanimation.animation.DynamicAnimation;
 import androidx.dynamicanimation.animation.FlingAnimation;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.MotionEvent;
 import android.view.VelocityTracker;
@@ -31,4 +32,8 @@ public class MainActivity extends AppCompatActivity {
             .start();
     }
 
+    public void openZoomActivty(View view) {
+        Intent intent = new Intent(this,ZoomActivity.class);
+        startActivity(intent);
+    }
 }
